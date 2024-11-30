@@ -1,0 +1,309 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aditya Deshlahre} \\ \vspace{4pt}
+    \small \href{mailto:wymaditya@gmail.com}{{wymaditya@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/adityadeshlahre/}{{\underline{linkedin.com/in/adityadeshlahre}}} $|$
+    \href{https://x.com/adityadeshlahre}{{\underline{adityadeshlahre}}} $|$
+    \href{https://github.com/adityadeshlahre}{{\underline{github.com/adityadeshlahre}}}
+    
+    
+\end{center}
+
+% \vspace{6pt}
+
+%
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubheading
+      {Google Summer Of Code'24 Mentee (Remote)}{{\href{https://gist.github.com/adityadeshlahre/ee28a4c6100788ae23196e8e2394738f}{\textbf{ $|$ \emph Link $|$}}} May 2024 - Augest 2024}
+      {\textbf{OpenELIS Global}}{Minnesota/Wisconsin, Winona/Dodge County}
+      \resumeItemListStart
+       \resumeItem{Migrated \textbf{MVC controller} to Rest Controllers [ EndPoints ]}
+        \resumeItem{Rewritten all JSP pages to \textbf{ReactJS}, handling edge cases, and adding and updating many other features.}
+          \resumeItem{Worked over \textbf{Admin} \& \textbf{Configuration} pages}
+           \resumeItem{Heavy state management over \textbf{Forms} \& \textbf{Status} pages}
+            \resumeItem{Merged over \textbf{25K Lines} \& \textbf{91 Commits} in organization codebase}
+             \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{Dyanamic Rendering, Strict-Validation, User-Edge Cases, SpringBoot, Maven, MVC \& Rest Controller}}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Form Tribe Hackathon (Remote)}{{\href{https://dub.sh/gt3iVjm}{\textbf{ $|$ \emph Link $|$}}} Oct 2023 - Oct 2023}
+      {\textbf{FormBricks OSS}}{Kiel, USA}
+      
+      \resumeItemListStart
+        \resumeItem{Become RunnerUp (Tagged as \textbf{Guidance Guru}) On-boarded 10-20 students during hacktober'23 fest on FromBrick CodeBase (p2p help in Discord)}
+        \resumeItem{Fixed \textbf{Account Manipulation} form issues on RunTime}
+        \resumeItem{Fixed \textbf{Caching Team/User Group}, \textbf{NextJs Caching} \& \textbf{Role Implementation} related issues}
+        \resumeItem{Fixed \textbf{Valid ProductName} form issues non-empty-spacy names validation added}
+        \resumeItem{Fixed \textbf{Team Selection} issues of updated/deleted teams}
+        \resumeItem{Worked on official \textbf{on-boarding documentation} of FormBricks }
+        \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{NextJs Caching, Zod, Context Gathering}}
+    \resumeItemListEnd
+    
+        % \resumeSubheading
+    %   {Software Engineer}{Feb 2019 - Jan 2020}
+    %   {Thales}{Noida, Uttar Pradesh}
+    %   \resumeItemListStart
+    %     \resumeItem{Researched \textbf{AOTA project}, aimed at managing smart card and all its files remotely through server enabling telecom operators to manage 2G, 3G, and LTE operations}
+    %     \resumeItem{Developed \textbf{core services} with team in RUM component}
+    % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------Open Source Contribution-----------
+% \section{Open Source Contributions}
+%   \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  % \resumeSubheading
+  %     {Google Summer Of Code'24 Mentee (Remote)}{ {{ $|$ \emph{\href{https://github.com/adityadeshlahre/properDM}{\textbf{Link}} }}}May 2024 - Present}
+  %     {\textbf{OpenELIS Global}\href{https://github.com/adityadeshlahre/properDM}{\textbf{| Link |}}}{Minnesota/Wisconsin, Winona/Dodge County }
+  %     \resumeItemListStart
+  %      \resumeItem{Migrated \textbf{MVC controller} to Rest Controllers [ EndPoints ]}
+  %       \resumeItem{Rewritten all JSP pages to \textbf{ReactJS}}
+  %        \resumeItem{Handling edge cases \& added and updated many other features}
+  %         \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{Dyanamic Rendering, Strict-Validation, User-Edge Cases, SpringBoot, Maven, MVC \& Rest Controller}}
+  %   \resumeItemListEnd
+  %   \resumeSubheading
+  %     {Form Tribe Hackathon (Remote)}{Oct 2023 - Oct 2023}
+  %     {\textbf{FormBricks OSS}}{Kiel, USA}
+      
+  %     \resumeItemListStart
+  %       \resumeItem{Become RunnerUp (Tagged as \textbf{Guidance Guru}) On-boarded 10-20 students during hacktober'23 fest on FromBrick CodeBase (p2p help in Discord)}
+  %       \resumeItem{Fixed \textbf{Account Manipulation} form issues on RunTime}
+  %       \resumeItem{Fixed \textbf{Caching Team/User Group}, \textbf{NextJs Caching} \& \textbf{Role Implementation} related issues}
+  %       \resumeItem{Fixed \textbf{Valid ProductName} form issues non-empty-spacy names validation added}
+  %       \resumeItem{Fixed \textbf{Team Selection} issues of updated/deleted teams}
+  %       \resumeItem{Worked on official \textbf{on-boarding documentation} of FormBricks }
+  %       \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{NextJs Caching, Zod, Context Gathering}}
+  %   \resumeItemListEnd
+    
+        % \resumeSubheading
+    %   {Software Engineer}{Feb 2019 - Jan 2020}
+    %   {Thales}{Noida, Uttar Pradesh}
+    %   \resumeItemListStart
+    %     \resumeItem{Researched \textbf{AOTA project}, aimed at managing smart card and all its files remotely through server enabling telecom operators to manage 2G, 3G, and LTE operations}
+    %     \resumeItem{Developed \textbf{core services} with team in RUM component}
+    % \resumeItemListEnd
+  % \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/adityadeshlahre/properDM}{\textbf{properDM (WebSocket Based Chat Application)}}}
+          {{ $|$ \emph{\href{https://github.com/adityadeshlahre/properDM}{\textbf{Link}} $|$ Personal Project}}}
+          \resumeItemListStart
+                \resumeItem{Created a \textbf{real-time chat application} using \textbf{WebSocket}}
+                \resumeItem{Implemented \textbf{server-side logic} (mocking of data from JSON file) with \textbf{Express/Node.js, FS library} and managed WebSocket connections}
+                \resumeItem{Simple frontend with \textbf{ReactJS} to handle real-time message rendering and user interactions}
+                \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{TypeScript, Express/Node.js, WebSocket(NPM), ReactJS, Real-Time Rendering}}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/adityadeshlahre/rabbitMQ-RPC} {\textbf{Code JUDGE (Reply Request Pattern)}}}
+          {{ $|$ \emph{\href{https://github.com/adityadeshlahre/rabbitMQ-RPC}{\textbf{Link}} $|$ {Personal Project}}}}
+          \resumeItemListStart
+             \resumeItem{Developed an \textbf{ code judging system} utilizing \textbf{Judge0} for code evaluation and a \textbf{Pub/Sub system}}
+             \resumeItem{Implemented a \textbf{Reply Request Pattern} using \textbf{RabbitMQ} and \textbf{Docker} to manage code submission and evaluation responses}
+             \resumeItem{Enabled real-time code evaluation and result delivery via a reliable messaging system}
+             \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{Judeg0 APIs, Pub/Sub Systems, RabbitMQ, Docker}}
+           \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/adityadeshlahre/songSlayer}{\textbf{Song Slayer}}}
+          {{ $|$ \emph{\href{https://github.com/adityadeshlahre/songSlayer}{\textbf{Link}}}{ $|$ \emph{Personal Project}}}}
+          \resumeItemListStart
+            \resumeItem{Song Voting Application \textbf{WebSocket} based \textbf{writting in-memory} songs list}
+            \resumeItem{Added upvote feature most upvoted song will be sent to QUEUE to be played}
+            \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{Typescript, WebSocket(NPM) \& Rendering}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://adityadeshlahre.github.io/}{\textbf{Personal Bloging site}}}
+          {{{ $|$ \emph{\href{https://github.com/adityadeshlahre/songSlayer}{\textbf{Link}}} $|$ \emph{Personal Site}}}}
+          \resumeItemListStart
+            \resumeItem{Zola based \textbf{Static Blog site hosted in GitHub Pages}.}
+            \resumeItem{Skills Acquired $\Longrightarrow$ \textbf{HTML, CSS \& MarkDown}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%%
+
+%-------------------------------------------
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+            \resumeItem{\textbf{Programming Languages }{: TypeScript, JavaScript, Basics of Python, Java, Springboot, Maven \& LaTeX}}
+            \resumeItem{\textbf{JS EcoSystem based Technologies }{: RPCs (tRPC \& gRPC),  MongoDB, Express Node Js, React/Next Js, Zod, TailWind, MaterialUI}}
+            \resumeItem{\textbf{Miscellaneous Technologies }{: MarkDown, Redis, DrizzalORM, Prisma, RabbitMQ, Docker, GraphQL, WebSockets, MonoRepo, Caddy, Linux, Bash, Git, GitHub}}
+\resumeItemListEnd
+
+%-------------------------------------------
+
+% \section{Scholastic Achievements}
+% \begin{itemize}
+%     \resumeItem{Selected among the \textbf{top 40 postgraduate students} from premier institutes (IITs, IISC) for \textbf{academic excellence in Reliance Foundation Scholarship in Artificial Intelligence and Computer Science} for the year 2020-21.}
+%     \item P Bhatia, A Sinha, S P Joshi, R Sarkar, R Ghosh, S Jana, "Automated Quantification of Inflamed Lung Regions in Chest CT by UNet++ and SegCaps: A Comparative Analysis in COVID-19 Cases", {\it2022 44th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}.
+% \end{itemize}
+
+
+%-------------------------------------------
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of Delhi (DU)}{ South Campus, New Delhi}
+      {BS. (Hons.) Mathematics \& Computing}{July 2022 -- July 2026}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA : \textbf{6.29/10.0}}
+        \resumeItem{Relevant Coursework: JavaScript, Applied PyPackages, Python, Jupiter NoteBook, HTML-CSS-JS, Probability \& Statistics, Maxima, Mathematica, LaTeX Language}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+
+
+\begin{comment}
+    {\emph{Research Work} $|$ {Jan 2021 - July 2022}}
+    {\emph{Natural Language Processing} $|$ {Feb 2021 - May 2021}}
+\end{comment}
+
+%-------------------------------------------
+\end{document}
