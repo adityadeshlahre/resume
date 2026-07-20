@@ -5,10 +5,16 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
+\usepackage[
+  letterpaper,
+  left=0.45in,
+  right=0.45in,
+  top=0.35in,
+  bottom=0.35in
+]{geometry}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -40,11 +46,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.8in}
-\addtolength{\evensidemargin}{-0.8in}
-\addtolength{\topmargin}{-0.8in}
-\addtolength{\textwidth}{1.6in}
-\addtolength{\textheight}{1.0in}
+% \addtolength{\oddsidemargin}{-0.8in}
+% \addtolength{\evensidemargin}{-0.8in}
+% \addtolength{\topmargin}{-0.8in}
+% \addtolength{\textwidth}{1.6in}
+% \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -53,9 +59,17 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Sections formatting
+\titleformat{\section}
+  {\vspace{-7pt}\scshape\raggedright\normalsize\bfseries}
+  {}{0em}{}
+  [\color{black}\titlerule\vspace{-6pt}]
+
+\titlespacing*{\section}{0pt}{5pt}{10pt}
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -112,7 +126,7 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Aditya Deshlahre} \\ \vspace{4pt}
+    \textbf{\Large \scshape Aditya Deshlahre} \\ \vspace{1pt}
     \small \href{mailto:wymaditya@gmail.com}{{\underline{wymaditya@gmail.com}}} $|$ 
     \href{https://www.linkedin.com/in/adityadeshlahre/}{{\underline{LinkedIn}}} $|$
     \href{https://x.com/adityadeshlahre}
@@ -140,7 +154,18 @@
 %-------------------------------------------
   \resumeSubHeadingListStart
         \resumeSubheading
-          {HackerRank (Intern | Hybrid)}{{\href{https://hackerrank.com/}{\textbf{ $|$ \emph Link $|$}}} Jan 2026 - Jun 2026}
+          {AgnostAI (Software Engineering Intern | Hybrid)}{{\href{https://agnost.ai/}{\textbf{ $|$ \emph Link $|$}}} Jul 2026 - Present}
+          {\textbf{Founding Full Stack Developer}}{Bengaluru, India}
+          \resumeItemListStart
+          \resumeItem{Shipped \textbf{20+ merged PRs} for an AI-agent observability platform across telemetry, conversation intelligence, dashboard UX, and Slack workflows.}
+          \resumeItem{Built AI observability onboarding for \textbf{OpenTelemetry}, \textbf{LangChain TS}, and \textbf{Spectrum TS}, enabling developers to instrument agent conversations and inspect
+          traces in AgnostAI.}
+          \resumeItem{Implemented LLM-powered workflows using \textbf{OpenAI} for \textbf{Spotlight Ask streaming}, login summaries, chat translation, and 48-hour self-improvement suggestions.}
+          \resumeItem{Revamped the analytics dashboard with \textbf{shadcn/Base UI} and delivered Slack reports, mentions, and weekly summaries for operational AI-agent insights.}
+          \resumeItem{Tech $\Longrightarrow$ \textbf{TypeScript, React, Go, OpenAI, LLM Workflows, OpenTelemetry, LangChain, Slack API, ClickHouse, shadcn/Base UI}}
+        \resumeItemListEnd
+        \resumeSubheading
+          {HackerRank (Software Engineering Intern | Hybrid)}{{\href{https://www.hackerrank.com/interns/2026}{\textbf{ $|$ \emph Link $|$}}} Jan 2026 - Jun 2026}
       {\textbf{Team Integrity - Desktop Applicaiton}}{Bengaluru, India}
       \resumeItemListStart
         \resumeItem{Developed OS-level detection mechanisms for unauthorized applications using native Windows and macOS APIs.}
@@ -150,7 +175,7 @@
         \resumeItem{Tech $\Longrightarrow$ \textbf{Electron JS, Crash Reporting Core, Language Binding, NewRelic, Native Application, OS Level Optimization Across Architecture, profiling, memory leak detection}}
     \resumeItemListEnd
         \resumeSubheading
-          {Keizer Works (Intern | Remote)}{{\href{https://keizerworks.com/}{\textbf{ $|$ \emph Link $|$}}} Jun 2025 - July 2025}
+          {Keizer Works (Software Engineering Intern | Remote)}{{\href{https://keizerworks.com/}{\textbf{ $|$ \emph Link $|$}}} Jun 2025 - July 2025}
       {\textbf{Full Stack Developer}}{Chandigarh, India}
       \resumeItemListStart
        \resumeItem{Integrated \textbf{Hono JS} APIs with \textbf{RBAC-based} authorization, improving backend security and structure.}
