@@ -1,0 +1,147 @@
+%-------------------------
+% Generic Cover Letter in LaTeX
+% Author: Aditya Deshlahre
+%
+% Usage:
+% 1. Replace [Company Name], [Role Title], and any bracketed text before sending.
+% 2. Keep the live letter concise.
+% 3. Uncomment only the role-specific lines that fit the job.
+%
+% Common target designations:
+% - Software Engineer
+% - Full Stack Developer
+% - Founding Engineer
+% - Frontend Engineer
+% - Backend Engineer
+% - AI Engineer
+% - Platform Engineer
+% - Developer Experience Engineer
+% - Open Source Engineer
+% - Desktop Application Engineer
+%
+% Experience keywords from resume:
+% - AgnostAI: Founding Full Stack Developer Team, AI-agent observability, OpenTelemetry,
+%   LangChain TS, Spectrum TS, OpenAI workflows, Slack reporting, ClickHouse dashboards.
+% - HackerRank: Team Integrity Desktop Application, Electron, C++, Swift, macOS/Windows
+%   native APIs, Sentry crash reporting, NewRelic, profiling, memory leak fixes.
+% - Keizer Works: Full Stack Developer, Hono JS, RBAC, Socket.IO, Redis Streams, AWS, SST.
+% - GSoC 2024/2025: OpenELIS Global, Spring Boot REST APIs, JSP to React migration,
+%   Formik/Yup, 50K+ LOC, 100+ commits.
+% - SellerSetu optional/commented resume entry: Frontend Intern, JavaScript to TypeScript,
+%   Next.js, TanStack Query/Table, Zustand, Material UI, production edge cases.
+% - Form Tribe Hackathon optional/commented resume entry: FormBricks OSS, runner-up
+%   "Guidance Guru", onboarded 10-20 students, fixed account/team/caching/role issues,
+%   contributed onboarding docs.
+% - Personal projects: ELBAVOL, trading simulation platform, F8F workflow automation,
+%   DataSheet AI financial CLI/spreadsheet/PDF generator.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[
+  letterpaper,
+  left=0.75in,
+  right=0.75in,
+  top=0.65in,
+  bottom=0.65in
+]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+\pagestyle{empty}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{9pt}
+
+\newcommand{\candidateName}{Aditya Deshlahre}
+\newcommand{\candidateEmail}{wymaditya@gmail.com}
+\newcommand{\candidateLinkedIn}{https://www.linkedin.com/in/adityadeshlahre/}
+\newcommand{\candidateGithub}{https://github.com/adityadeshlahre}
+\newcommand{\companyName}{[Company Name]}
+\newcommand{\roleTitle}{[Role Title]}
+\newcommand{\companyReason}{[one specific reason you want to work at this company]}
+
+\begin{document}
+
+\begin{center}
+  {\Large \textbf{\candidateName}}\\
+  \href{mailto:\candidateEmail}{\candidateEmail} $|$
+  \href{\candidateLinkedIn}{LinkedIn} $|$
+  \href{\candidateGithub}{GitHub}
+\end{center}
+
+\vspace{6pt}
+
+\today
+
+Hiring Team\\
+\companyName
+
+Dear Hiring Team,
+
+I am writing to apply for the \roleTitle{} position at \companyName. I am a software engineer with hands-on experience across AI-agent observability, full-stack product development, desktop application integrity, open-source healthcare systems, and real-time backend infrastructure. I have worked in fast-moving engineering teams where the job is not only to write code, but to understand production problems, ship reliable fixes, and make systems easier for other developers and users to trust.
+
+At AgnostAI, I work on the founding full-stack engineering team for an AI-agent observability platform. I have shipped 20+ merged PRs across telemetry onboarding, conversation intelligence, dashboard UX, Slack workflows, and LLM-powered features using OpenAI. That work includes OpenTelemetry, LangChain TS, Spectrum TS, ClickHouse-backed analytics, Spotlight Ask streaming, chat translation, login summaries, and self-improvement suggestions for agent conversations.
+
+Before that, at HackerRank, I worked on the Team Integrity desktop application. I built OS-level detection mechanisms with native Windows and macOS APIs, extended Electron through C++ and Swift integrations, and helped reduce production crash rate from 7\% to 0\% through crash investigation, memory leak analysis, profiling, and Sentry-based reporting. At Keizer Works, I worked as a full-stack developer on Hono JS APIs, RBAC authorization, Socket.IO real-time features, Redis Streams, AWS, and SST-based deployments.
+
+My open-source background also shaped how I work. As a Google Summer of Code mentee with OpenELIS Global in 2024 and 2025, I migrated legacy MVC controllers to RESTful APIs, rewrote JSP pages to React, handled complex Formik/Yup form states, and contributed 50K+ lines across 100+ commits. Outside internships, I have built projects in AI workflow automation, trading simulations, financial data tooling, spreadsheet/PDF generation, Kubernetes orchestration, Kafka, Redis, LangChain, and LangGraph.
+
+I would be excited to bring this mix of product engineering, systems debugging, AI workflow experience, and open-source ownership to \companyName. What interests me most about this role is \companyReason. I care about shipping useful software, understanding the edge cases behind real user problems, and improving the developer and product experience with simple, maintainable engineering.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my experience can contribute to your team.
+
+Sincerely,\\
+\candidateName
+
+%-------------------------
+% Optional role-specific swap-ins.
+% Uncomment one or two sentences only when they match the job.
+%-------------------------
+
+% For Full Stack Developer / Software Engineer:
+% My strongest fit is full-stack execution across React, TypeScript, Go, APIs,
+% databases, dashboards, auth/RBAC, real-time workflows, and production debugging.
+
+% For AI Engineer / AI Product Engineer:
+% I have shipped LLM-powered product workflows using OpenAI, LangChain, LangGraph,
+% streaming interfaces, AI-agent observability, and agent conversation analytics.
+
+% For Frontend Engineer:
+% I have built production React interfaces, dashboard experiences, JSP-to-React
+% migrations, TanStack-powered frontend flows, form-heavy UX with Formik/Yup,
+% and shadcn/Base UI based product screens.
+
+% For Backend Engineer:
+% I have built REST APIs, Hono services, RBAC authorization, Redis Streams,
+% Kafka/event-driven systems, ClickHouse analytics paths, AWS/SST deployments,
+% and scalable real-time backend features.
+
+% For Desktop Application Engineer:
+% I have worked on Electron desktop integrity systems with native C++ and Swift
+% bindings, OS-level app detection, Sentry crash reporting, profiling, memory
+% leak fixes, and Windows/macOS platform behavior.
+
+% For Open Source Engineer:
+% My GSoC work with OpenELIS Global involved legacy modernization, REST API
+% migration, React rewrites, validation-heavy forms, and sustained contribution
+% across 100+ commits in a real production open-source codebase.
+
+% For Startup / Founding Engineer:
+% I am comfortable taking ambiguous product problems end to end, moving across
+% frontend, backend, integrations, observability, and developer experience with
+% minimal hand-holding.
+
+% For Hackathon / Community angle:
+% I was runner-up in the Form Tribe Hackathon as a "Guidance Guru", where I
+% onboarded 10-20 students to the FormBricks codebase, helped peers in Discord,
+% fixed account/team/caching/role issues, and contributed onboarding docs.
+
+% For project-heavy applications:
+% My personal projects include ELBAVOL, an AI landing-page generator using Go,
+% Kubernetes, LangChain, and LangGraph; a Kafka/Redis trading simulation; F8F,
+% an AI workflow automation app; and DataSheet AI, a financial analysis CLI that
+% generates spreadsheet and PDF reports.
+
+\end{document}
