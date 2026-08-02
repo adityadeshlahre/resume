@@ -1,3 +1,10 @@
+## Build command
+
+```bash
+pdflatex -output-directory tempResume -interaction=nonstopmode resume.tex && pdflatex -output-directory tempResume -interaction=nonstopmode resume.tex && rm -f tempResume/resume.aux tempResume/resume.log tempResume/resume.out tempResume/resume.toc
+
+```
+
 ## Giting my resume
 
 #### This resposetory is an example of resume development.
